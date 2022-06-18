@@ -57,6 +57,7 @@ jobs:
           - 'sparkfun_nrf52840_micromod'
           - 'waveshare_nrf52840_eval'
           - 'kimiro'
+          - 'nrfpill'
 
     steps:
     - name: Setup Python
