@@ -59,7 +59,7 @@
 #define USB_DESC_CDC_ONLY_PID  0x2402
 
 #define UF2_PRODUCT_NAME  "nRFpill nRF52840"
-#define UF2_VOLUME_LABEL  "nRFPILL-BOOT"
+#define UF2_VOLUME_LABEL  "NRFPILL-BOOT"
 #define UF2_BOARD_ID      "nRF52840-nRFpill_v1"
 #define UF2_INDEX_URL     "none"
 
