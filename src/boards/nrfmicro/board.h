@@ -22,43 +22,41 @@
  * THE SOFTWARE.
  */
 
-#ifndef _ARDUINOBLE33_NRF52840_H
-#define _ARDUINOBLE33_NRF52840_H
-
-#define _PINNUM(port, pin)    ((port)*32 + (pin))
+#ifndef NRFMICRO_H
+#define NRFMICRO_H
 
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-#define LEDS_NUMBER           1  // red LED
-#define LED_PRIMARY_PIN       _PINNUM(0, 24)
-#define LED_STATE_ON          0
+#define LEDS_NUMBER       1
+#define LED_PRIMARY_PIN   42 // Blue
+#define LED_STATE_ON      1
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER        2
-#define BUTTON_1              _PINNUM(1, 11)  // D2 switch
-#define BUTTON_2              _PINNUM(1, 12)  // D3 switch
-#define BUTTON_PULL           NRF_GPIO_PIN_PULLUP
+#define BUTTONS_NUMBER      2
+#define BUTTON_1            34
+#define BUTTON_2            12
+#define BUTTON_PULL         NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER   "Arduino"
-#define BLEDIS_MODEL          "Nano 33 BLE"
+#define BLEDIS_MANUFACTURER    "Joric"
+#define BLEDIS_MODEL           "nRFmicro"
 
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
+
+// Shared VID/PID with Feather nRF52840, will be disabled for building in the future
 #define USB_DESC_VID           0x239A
-#define USB_DESC_UF2_PID       0x0063
-#define USB_DESC_CDC_ONLY_PID  0x0064
+#define USB_DESC_UF2_PID       0x0029
+#define USB_DESC_CDC_ONLY_PID  0x0029
 
-//------------- UF2 -------------//
-#define UF2_PRODUCT_NAME   "Arduino Nano 33 BLE"
-#define UF2_VOLUME_LABEL   "NANO33BOOT"
-#define UF2_BOARD_ID       "nRF52840-Nano-33"
-#define UF2_INDEX_URL      "https://www.arduino.cc/"
+#define UF2_PRODUCT_NAME    "nRFmicro"
+#define UF2_BOARD_ID        "nRFmicro 1.3"
+#define UF2_INDEX_URL       "https://github.com/joric/nrfmicro.git"
 
-#endif // _ITSY_NRF52840_H
+#endif // NRFMICRO_H

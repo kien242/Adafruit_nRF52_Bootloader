@@ -48,7 +48,7 @@
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER  "kien242"
-#define BLEDIS_MODEL         "kimiro"
+#define BLEDIS_MODEL         "Kimiro"
 
 //--------------------------------------------------------------------+
 // USB
