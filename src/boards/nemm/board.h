@@ -22,42 +22,40 @@
  * THE SOFTWARE.
  */
 
-#ifndef NRFMICRO_H
-#define NRFMICRO_H
+#ifndef NEMM_H
+#define NEMM_H
 
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER       1
-#define LED_PRIMARY_PIN   42 // Blue
+#define LED_PRIMARY_PIN   10 // Blue
 #define LED_STATE_ON      1
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER      2
-#define BUTTON_1            34
-#define BUTTON_2            12
+#define BUTTON_1            9
+#define BUTTON_2            36
 #define BUTTON_PULL         NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
-#define BLEDIS_MANUFACTURER    "Joric"
-#define BLEDIS_MODEL           "nRFmicro"
+#define BLEDIS_MANUFACTURER    "kien242"
+#define BLEDIS_MODEL           "Nemm Keyboard"
 
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
+#define USB_DESC_VID           0x1209
+#define USB_DESC_UF2_PID       0x2402
+#define USB_DESC_CDC_ONLY_PID  0x2402
 
-// Shared VID/PID with Feather nRF52840, will be disabled for building in the future
-#define USB_DESC_VID           0x239A
-#define USB_DESC_UF2_PID       0x0029
-#define USB_DESC_CDC_ONLY_PID  0x0029
+#define UF2_PRODUCT_NAME    "Nemm keyboard"
+#define UF2_VOLUME_LABEL    "NEMM-KEEB"
+#define UF2_BOARD_ID        "Nemm v1.0"
+#define UF2_INDEX_URL       "https://github.com/kien242/ZMK-config-split-keyboards/tree/nemm"
 
-#define UF2_PRODUCT_NAME    "nRFmicro"
-#define UF2_VOLUME_LABEL    "nRFmicro"
-#define UF2_BOARD_ID        "nRFmicro 1.3"
-#define UF2_INDEX_URL       "https://github.com/joric/nrfmicro.git"
-
-#endif // NRFMICRO_H
+#endif // NEMM_H

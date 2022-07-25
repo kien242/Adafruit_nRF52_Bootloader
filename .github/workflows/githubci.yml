@@ -26,7 +26,7 @@ jobs:
           - 'pca10059'
           - 'pca10100'
           - 'nrfpill'
-
+          - 'nemm'
     steps:
     - name: Setup Python
       uses: actions/setup-python@v3
