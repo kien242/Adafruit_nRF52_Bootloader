@@ -30,16 +30,16 @@
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
-+#define LEDS_NUMBER       1
-+#define LED_PRIMARY_PIN   _PINNUM(1, 10) // Blue
-+#define LED_STATE_ON      1
+#define LEDS_NUMBER       1
+#define LED_PRIMARY_PIN   _PINNUM(1, 10) // Blue
+#define LED_STATE_ON      1
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER      2
-+#define BUTTON_1            _PINNUM(1,2)
-+#define BUTTON_2            _PINNUM(0,12)
+#define BUTTON_1            _PINNUM(1,2)
+#define BUTTON_2            _PINNUM(0,12)
 #define BUTTON_PULL         NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
