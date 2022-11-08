@@ -50,6 +50,7 @@ jobs:
           - 'particle_argon'
           - 'particle_boron'
           - 'particle_xenon'
+          - 'nrfmicro'
           - 'pca10056'
           - 'pca10059'
           - 'pca10100'
